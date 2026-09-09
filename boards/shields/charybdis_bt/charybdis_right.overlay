@@ -1,6 +1,8 @@
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "charybdis.dtsi"
 #include "charybdis_pmw3610.dtsi"
 //#include "charybdis_pointer.dtsi"
+
 
 // The matrix transform is 6 columns over because the left half is 6 columns wide.
 &default_transform {
@@ -30,6 +32,12 @@
 		, <&pro_micro 4 GPIO_ACTIVE_HIGH>
 		, <&pro_micro 9 GPIO_ACTIVE_HIGH>
 		;
+};
+
+&trackball {
+    status = "okay";
+    zephyr,axis-x = <INPUT_REL_X>;
+    zephyr,axis-y = <INPUT_REL_Y>;
 };
 
 /* enable the listener on central */
