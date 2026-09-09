@@ -33,7 +33,7 @@
 };
 
 /* enable the listener on central */
-&trackball_listener {
-    status = "okay";
-    device = <&trackball>;
-};
+//&trackball_listener {
+//    status = "okay";
+//    device = <&trackball>;
+//};
