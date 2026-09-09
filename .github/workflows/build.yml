@@ -134,11 +134,12 @@ jobs:
         NM="${{ matrix.combo.name }}"
         BD="${{ matrix.combo.board }}"    # nice_nano_v2
 
-        declare -A LIST=(
+          declare -A LIST=(
           [bt]="charybdis_left charybdis_right"
           [dongle]="charybdis_left charybdis_right charybdis_dongle"
           [reset]="settings_reset"
         )
+        
 
         mkdir -p "$GITHUB_WORKSPACE/out/$NM"
         CONFIG_DIR="$GITHUB_WORKSPACE/config"
