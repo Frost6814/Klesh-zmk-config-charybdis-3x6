@@ -1,3 +1,4 @@
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "charybdis.dtsi"
 #include "charybdis_pmw3610.dtsi"
 //#include "charybdis_pointer.dtsi"
@@ -33,6 +34,8 @@
 
 &trackball {
   status = "okay";
+  zephyr,axis-x = <INPUT_REL_X>;
+  zephyr,axis-y = <INPUT_REL_Y>;
 };
 
 /* Enable the trackball listener on the peripheral with the sensor */
