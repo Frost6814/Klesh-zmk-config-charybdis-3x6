@@ -39,7 +39,7 @@
 };
 
 /* Enable the trackball listener on the peripheral with the sensor */
-&trackball_split {
-  device = <&trackball>;
-  status = "okay";
-};
+//&trackball_split {
+//  device = <&trackball>;
+//  status = "okay";
+//};
