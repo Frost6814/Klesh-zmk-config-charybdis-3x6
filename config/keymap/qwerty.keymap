@@ -13,12 +13,6 @@
 #include "combos.dtsi"
 
 / {
-    /* Слушатель трекбола для подсистемы ZMK Pointing */
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&vtrackball>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
